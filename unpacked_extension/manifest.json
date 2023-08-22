@@ -1,15 +1,23 @@
 {
-    "name": "Circle.ms Note Extension",
-    "description": "Improve note display on circle.ms",
-    "version": "1.0",
-    "manifest_version": 3,
-    "permissions": ["storage", "activeTab", "scripting"],
-    "content_scripts": [
-     {
-       "matches": ["https://webcatalog.circle.ms/Circle/*"],
-       "js": ["circle_ms.js"]
-     }
-    ],
-    "background": {
+  "name": "Circle.ms Note Extension",
+  "description": "Improve note display on circle.ms",
+  "version": "1.0",
+  "manifest_version": 3,
+  "permissions": [
+    "storage",
+    "activeTab",
+    "scripting"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://webcatalog.circle.ms/Circle/*"
+      ],
+      "js": [
+        "circle_ms.js"
+      ]
     }
-  }
+  ],
+  "background": {},
+  "options_page": "options.html"
+}

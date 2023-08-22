@@ -28,9 +28,9 @@ function addCustomNoteElement(circleNotes) {
   customNoteDetails.style.width = '100%';
   let circleNumber = getCircleNumber();
   if (circleNotes[circleNumber] != undefined) {
-    customNoteDetails.textContent = circleNotes[circleNumber];
+    customNoteDetails.value = circleNotes[circleNumber];
   } else {
-    customNoteDetails.textContent = 'Add your custom notes here\nClick Save to save.';
+    customNoteDetails.value = 'Add your custom notes here\nClick Save to save.';
   }
 
   let customNoteSave = addCustomNoteButton('Save', 'custom-note-save');
